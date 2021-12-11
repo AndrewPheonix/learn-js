@@ -52,7 +52,7 @@ function addEvents () {
 
     previousResultsElement.innerHTML = '';
 
-    onClear();
+    onClear(); 
   });
 }
 
