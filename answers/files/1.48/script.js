@@ -54,6 +54,7 @@ function finalResult() {
       return result !== null ? result ** (1 / Number(value2)) : Number(value1) ** (1 / Number(value2))
   }
 }
+
 //   switch(operation) {
 //     case "ADDITION": {
 //       if (result !== null) {
@@ -141,7 +142,6 @@ function sign() {
     "ROOT"
     :
       return "√"
-
   }
 }
   // if (operation === "ADDITION") {
