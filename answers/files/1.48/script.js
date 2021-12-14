@@ -28,11 +28,7 @@ function onSubmit () {
 }
 
 function onClear () {
-  value1 = null;
-  value2 = null;
-  operation = null;
-  result = null;
-  previousResult = null;
+
   console.log('onClear')
 }
 
@@ -170,7 +166,6 @@ function sign() {
 function finalResultTwo() {
   if (previousResult !== null) {
     return '('+previousResult+')' + sign() + value2
-  } else {
-    return value1 + sign() + value2
   }
+    return value1 + sign() + value2
 }
