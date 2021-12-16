@@ -28,8 +28,14 @@ function onSubmit () {
 }
 
 function onClear () {
-
-  console.log('onClear')
+    onLeftOperandChange(value)
+    onRightOperandChange(value)
+    onOperatorChange(value)
+    onSubmit ()
+    finalResult()
+    sign()
+    finalResultTwo()
+    console.log('onClear')
 }
 
 function finalResult() {
