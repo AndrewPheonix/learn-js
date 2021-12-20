@@ -22,19 +22,12 @@ function onOperatorChange(value) {
 function onSubmit () {
   result = finalResult()
   previousResult = finalResultTwo()
-  setExpression(result)
-  setResult(previousResult)
+  setExpression(previousResult)
+  setResult(result)
   console.log('onSubmit')
 }
 
 function onClear () {
-    onLeftOperandChange(value)
-    onRightOperandChange(value)
-    onOperatorChange(value)
-    onSubmit ()
-    finalResult()
-    sign()
-    finalResultTwo()
     console.log('onClear')
 }
 
