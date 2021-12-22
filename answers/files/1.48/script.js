@@ -1,16 +1,16 @@
-let value1 = null;
-let value2 = null;
+let leftOperand = null;
+let rightOperand = null;
 let operation = null;
 let result = null;
 let previousResult = null;
 
 function onLeftOperandChange(value) {
-  value1 = value
+  leftOperand = value
   console.log('onLeftOperandChange', value)
 };
 
 function onRightOperandChange(value) {
-  value2 = value
+  rightOperand = value
   console.log('onRightOperandChange', value)
 };
 
@@ -34,19 +34,19 @@ function onClear () {
 function finalResult() {
   switch (operation) {
     case "ADDITION":
-      return result !== null ? result + Number(value2) : Number(value1) + Number(value2)
+      return result !== null ? result + Number(rightOperand) : Number(leftOperand) + Number(rightOperand)
     case "SUBTRACTION":
-      return result !== null ? result - Number(value2) : Number(value1) - Number(value2)
+      return result !== null ? result - Number(rightOperand) : Number(leftOperand) - Number(rightOperand)
     case "MULTIPLICATION":
-      return result !== null ? result * Number(value2) : Number(value1) * Number(value2)
+      return result !== null ? result * Number(rightOperand) : Number(leftOperand) * Number(rightOperand)
     case "EXPONENTIATION":
-      return result !== null ? result ** Number(value2) : Number(value1) ** Number(value2)
+      return result !== null ? result ** Number(rightOperand) : Number(leftOperand) ** Number(rightOperand)
     case "DIVISION":
-      return result !== null ? result / Number(value2) : Number(value1) / Number(value2)
+      return result !== null ? result / Number(rightOperand) : Number(leftOperand) / Number(rightOperand)
     case "MODULUS":
-      return result !== null ? result % Number(value2) : Number(value1) % Number(value2)
+      return result !== null ? result % Number(rightOperand) : Number(leftOperand) % Number(rightOperand)
     case "ROOT":
-      return result !== null ? result ** (1 / Number(value2)) : Number(value1) ** (1 / Number(value2))
+      return result !== null ? result ** (1 / Number(rightOperand)) : Number(leftOperand) ** (1 / Number(rightOperand))
   }
 };
 
@@ -71,7 +71,7 @@ function sign() {
 
 function finalResultTwo() {
   if (previousResult !== null) {
-    return '('+previousResult+')' + sign() + value2
+    return '('+previousResult+')' + sign() + rightOperand
   }
-    return value1 + sign() + value2
+    return leftOperand + sign() + rightOperand
 };
