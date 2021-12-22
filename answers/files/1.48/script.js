@@ -50,63 +50,6 @@ function finalResult() {
   }
 }
 
-//   switch(operation) {
-//     case "ADDITION": {
-//       if (result !== null) {
-//         return result + Number(value2)
-//       } else {
-//         return Number(value1) + Number(value2)
-//       }
-//     }
-//
-//     case "SUBTRACTION": {
-//       if (result !== null) {
-//         return result - Number(value2)
-//       } else {
-//         return Number(value1) - Number(value2)
-//       }
-//     }
-//
-//     case "MULTIPLICATION": {
-//       if (result !== null) {
-//         return result * Number(value2)
-//       } else {
-//         return Number(value1) * Number(value2)
-//       }
-//     }
-//
-//     case "EXPONENTIATION": {
-//       if (result !== null) {
-//         return result ** Number(value2)
-//       } else {
-//         return Number(value1) ** Number(value2)
-//       }
-//     }
-//
-//     case "DIVISION": {
-//       if (result !== null) {
-//         return result / Number(value2)
-//       } else {
-//         return Number(value1) / Number(value2)
-//       }
-//     }
-//
-//     case "MODULUS": {
-//       if (result !== null) {
-//         return result % Number(value2)
-//       } else {
-//         return Number(value1) % Number(value2)
-//       }
-//     }
-//
-//     case "ROOT": {
-//       if (result !== null) {
-//         return result ** (1 / Number(value2))
-//       } else {
-//         return Number(value1) ** (1 / Number(value2))
-//       }
-//     }
-
 function sign() {
   switch (operation) {
     case
@@ -139,28 +82,6 @@ function sign() {
       return "√"
   }
 }
-
-  // if (operation === "ADDITION") {
-  //   return "+"
-  // }
-  // if (operation === "SUBTRACTION") {
-  //   return "-"
-  // }
-  // if (operation === "MULTIPLICATION") {
-  //   return "*"
-  // }
-  // if (operation === "EXPONENTIATION") {
-  //   return "**"
-  // }
-  // if (operation === "DIVISION") {
-  //   return "/"
-  // }
-  // if (operation === "MODULUS") {
-  //   return "%"
-  // }
-  // if (operation === "ROOT") {
-  //   return "√"
-  // }
 
 function finalResultTwo() {
   if (previousResult !== null) {
