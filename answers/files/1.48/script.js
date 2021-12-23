@@ -28,15 +28,17 @@ function onSubmit () {
 };
 
 function onClear () {
-    console.log('onClear')
+  result = null;
+  previousResult = null;
+  console.log('onClear')
 };
-
+    
 function finalResult() {
   switch (operation) {
     case "ADDITION":
-      return result !== null ? result + Number(rightOperand) : Number(leftOperand) + Number(rightOperand)
+      return result !== null ? result + Number(rightOperand) : Number(leftOperand) + Number(rightOperand) //return result = Number(leftOperand) + Number(rightOperand)
     case "SUBTRACTION":
-      return result !== null ? result - Number(rightOperand) : Number(leftOperand) - Number(rightOperand)
+      return result !== null ? result - Number(rightOperand) : Number(leftOperand) - Number(rightOperand) //return result = Number(leftOperand) - Number(rightOperand)
     case "MULTIPLICATION":
       return result !== null ? result * Number(rightOperand) : Number(leftOperand) * Number(rightOperand)
     case "EXPONENTIATION":
